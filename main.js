@@ -529,7 +529,7 @@ setInterval(async () => {
   if (stopped === 'close' || !conn || !conn.user) return;
   const _uptime = process.uptime() * 1000;
   const uptime = clockString(_uptime);
-  const bio = `[彡𝙏𝙔𝙍𝘼𝙓𝙀𝙎彡] 🪀 𝙥𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 𝘼𝙧𝙡𝙤𝙙𝙧𝙖𝙜𝙤𝙣: ${uptime} 𝙏𝙃𝙀𝙀 𝙈𝙊𝙎𝙏 𝙃𝙄𝙂𝙃`;
+  const bio = `彡𝙏𝙔𝙍𝘼𝙓𝙀𝙎彡 🪀: ${uptime} 𝙏𝙃𝙀𝙀 𝙈𝙊𝙎𝙏 𝙃𝙄𝙂𝙃`;
   await conn.updateProfileStatus(bio).catch((_) => _);
 }, 60000);
 function clockString(ms) {
